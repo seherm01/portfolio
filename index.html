@@ -441,7 +441,42 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
-       
+        
+        .creative-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .creative-card {
+            background: rgba(191, 215, 234, 0.05);
+            border: 2px solid rgba(191, 215, 234, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .creative-image img {
+            width: 100%;
+            display: block;
+        }
+        
+        .creative-content {
+            padding: 1.5rem;
+        }
+        
+        .creative-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .creative-org {
+            opacity: 0.7;
+            margin: 0.4rem 0 1rem;
+        }
+        
+        .creative-content p {
+            line-height: 1.6;
+        }
         @media (max-width: 768px) {
             .hero {
                 padding: 1rem;
@@ -703,5 +738,44 @@
                 </ul>
         </section>
     </div>
+    <section>
+            <h2>Creative & Marketing</h2>
+        
+            <div class="creative-grid">
+        
+                <div class="creative-card">
+                    <div class="creative-image">
+                        <img src="images/mentorship-signup.png"
+                             alt="WIE Mentorship Program promotional graphic">
+                    </div>
+        
+                    <div class="creative-content">
+                        <div class="creative-title">WIE Mentorship Program</div>
+                        <div class="creative-org">McMaster Women In Engineering</div>
+                        <p>
+                            Designed an Instagram promotional graphic for the
+                            2026–2027 WIE Mentorship Program.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="creative-card">
+                    <div class="creative-image">
+                        <img src="images/busy-bee-engineer.png"
+                             alt="WIE engineering bee sticker design">
+                    </div>
+        
+                    <div class="creative-content">
+                        <div class="creative-title">Engineering Bee Sticker</div>
+                        <div class="creative-org">McMaster Women In Engineering</div>
+                        <p>
+                            Created a custom sticker concept combining engineering
+                            imagery with WIE branding for student merchandise.
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
 </body>
 </html>
